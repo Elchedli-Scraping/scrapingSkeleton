@@ -1,0 +1,42 @@
+{
+  "name": "tiktok-scraper",
+  "version": "1.0.0",
+  "description": "A Nodejs script that scrapes data from TikTok profiles.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranbot-ai/tiktok-scraper.git"
+  },
+  "keywords": [
+    "TikTok",
+    "TikTok Scraper",
+    "Data Scraper",
+    "Encore Shao",
+    "RanBOT"
+  ],
+  "author": "Encore Shao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranbot-ai/tiktok-scraper/issues"
+  },
+  "homepage": "https://github.com/ranbot-ai/tiktok-scraper#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "puppeteer": "^21.6.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
+  }
+}
